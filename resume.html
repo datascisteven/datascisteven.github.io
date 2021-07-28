@@ -1555,7 +1555,7 @@
                     </ul>
                 </nav>
                 <div id="adobe-dc-view" style="width: 800px;"></div>
-                    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+                    <!-- <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
                     <script type="text/javascript">
 	                    document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
                             var adobeDCView = new AdobeDC.View({clientId: "a1661badfe7c4f3b861359601aca3f71", divId: "adobe-dc-view"});
@@ -1564,7 +1564,7 @@
                                 metaData:{fileName: "Steven Yan Resume.pdf"}
 		                    }, {embedMode: "IN_LINE", showDownloadPDF: false});
                         });
-                    </script>
+                    </script> -->
                 <!-- <div onload="listenForFileUpload()" style="margin: 0px">
                     <div id="adobe-dc-view">
                         <div style="margin: 50px;">
@@ -1574,6 +1574,16 @@
                     </div>
                     <script type="text/javascript" src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
                 </div> -->
+                <!-- insert just before the closing body tag </body> -->
+                <script src='/path-to-your-javascript-file/pdfobject.js'></script>
+                <script>
+                //Be sure your document contains an element with the CSS selector "adobe-dc-view"
+                var options = {
+                pdfOpenParams: { toolbar: '0', statusbar: '0', messages: '0', navpanes: '0' }
+                };
+
+                PDFObject.embed("datascisteven.github.io/assets/resume.pdf", "adobe-dc-view", options);
+                </script>       
                 <footer class="footer-main">
                     Steven Yan © 2021 
                     <a class="link" href="https://datascisteven.github.io/feed.xml" target="_blank">
