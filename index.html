@@ -1126,7 +1126,16 @@
                 display: inline-block
             }
 
-            .nav>.list>.item>.link,.nav-home>.list>.item>.link {
+            .nav>.list>.item>.link {
+                display: inline-block;
+                font-weight: 300;
+                font-size: 1.4rem;
+                padding: 10px 10px;
+                text-decoration: none;
+                width: 70px
+            }
+
+            .nav-home>.list>.item>.link {
                 display: inline-block;
                 font-weight: 300;
                 font-size: 1.4rem;
@@ -1165,7 +1174,6 @@
                 margin: 0;
                 border-radius: 4%;
                 transition: all .4s ease-in-out;
-                width: 70px
             }
 
             .nav-home>.list>.item>.link:hover {
