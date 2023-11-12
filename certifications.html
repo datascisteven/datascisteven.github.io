@@ -1505,6 +1505,26 @@
             .spoiler:hover:before {
                 display: none
             }
+
+            * {
+            box-sizing: border-box;
+            }
+
+            .row {
+            display: flex;
+            }
+
+            /* Create two equal columns that sits next to each other */
+            .column {
+            flex: 50%;
+            padding: 5px;
+            }
+            .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            }
     </style>
     <body>
         <div class="wrapper-large">
@@ -1567,50 +1587,81 @@
                     </div>
                     <div class="row">
                         <div class="column">
-                            <img src="assets/deep-learning-specialization.png" width="300">
+                            <img src="assets/certifications/Deep Learning Credly Badge.png" style="width:100%">
                         </div>
                         <div class="column">
-                            <img src="assets/Deep Learning Specialization Certificate.jpeg" width="300">
+                            <img src="assets/certifications/Deep Learning Specialization Certificate.jpg" style="width:100%">
                         </div>
                     </div>
                     <div>
-                        <details>
-                            <summary>Course 1: Neural Networks and Deep Learning</summary>
-                            Module 1: Introduction to Deep Learning
-                            Module 2: Neural Network Basics
-                            Module 3: Shallow Neural Networks
-                            Module 4: Deep Neural Networks
-                            <center><img src="assets/Deep Learning Course 1 Certificate.jpeg"></center>
-                        </details>
-                        <details>
-                            <summary>Course 2: Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization</summary>
-                            Module 1: Practical Aspects of Deep Learning
-                            Module 2: Optimization Algorithms
-                            Module 3: Hyperparameter Tuning, Batch Normalization and Programming Frameworks
-                            <center><img src="assets/Deep Learning Course 2 Certificate.jpeg"></center>
-                        </details>
-                        <details>
-                            <summary>Course 3: Structuring Machine Learning Projects</summary>
-                            Module 1: ML Strategy
-                            Module 2: ML Strategy
-                            <center><img src="assets/Deep Learning Course 3 Certificate.jpeg"></center>
-                        </details>
-                        <details>
-                            <summary>Course 4: Convolutional Neural Networks</summary>
-                            Module 1: Foundations of Convolutional Neural Networks
-                            Module 2: Deep Convolutional Models: Case Studies
-                            Module 3: Object Detection
-                            Module 4: Special Applications: Face Recognition & Neural Style Transfer
-                            <center><img src="assets/Deep Learning Course 4 Certificate.jpeg"></center>
-                        </details>
-                        <details>
-                            <summary>Course 5: Sequence Models</summary>
-                            Module 1: Recurrent Neural Networks
-                            Module 2: Natural Language Processing & Word Embeddings
-                            Module 3: Sequence Models & Attention Mechanism
-                            Module 4: Transformer Network
-                            <center><img src="assets/Deep Learning Course 5 Certificate.jpeg"></center>
-                        </details>
+                        <ul>
+                            <li>
+                                <details>
+                                    <summary>Course 1: Neural Networks and Deep Learning</summary>
+                                    <ul>
+                                        <li>Module 1: Introduction to Deep Learning</li>
+                                        <li>Module 2: Neural Network Basics</li>
+                                        <li>Module 3: Shallow Neural Networks</li>
+                                        <li>Module 4: Deep Neural Networks</li>
+                                    </ul>
+                                    <div>
+                                        <img src="assets/certifications/Deep Learning Course 1 Certificate.jpeg" class="center">
+                                    </div>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Course 2: Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization</summary>
+                                    <ul>
+                                        <li>Module 1: Practical Aspects of Deep Learning</li>
+                                        <li>Module 2: Optimization Algorithms</li>
+                                        <li>Module 3: Hyperparameter Tuning, Batch Normalization and Programming Frameworks</li>
+                                    </ul>
+                                    <div>
+                                        <img src="assets/certifications/Deep Learning Course 2 Certificate.jpeg", class="center">
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Course 3: Structuring Machine Learning Projects</summary>
+                                    <ul>    
+                                        <li>Module 1: ML Strategy</li>
+                                        <li>Module 2: ML Strategy</li>
+                                    </ul>
+                                    <div>
+                                        <img src="assets/certifications/Deep Learning Course 3 Certificate.jpeg", class="center">
+                                    </div>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Course 4: Convolutional Neural Networks</summary>
+                                    <ul>
+                                        <li>Module 1: Foundations of Convolutional Neural Networks</li>
+                                        <li>Module 2: Deep Convolutional Models: Case Studies</li>
+                                        <li>Module 3: Object Detection</li>
+                                        <li>Module 4: Special Applications: Face Recognition & Neural Style Transfer</li>
+                                    </ul>
+                                    <div>
+                                        <img src="assets/certifications/Deep Learning Course 4 Certificate.jpg", class="center">
+                                    </div>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Course 5: Sequence Models</summary>
+                                    <ul> 
+                                        <li>Module 1: Recurrent Neural Networks</li>
+                                        <li>Module 2: Natural Language Processing & Word Embeddings</li>
+                                        <li>Module 3: Sequence Models & Attention Mechanism</li>
+                                        <li>Module 4: Transformer Network</li>
+                                    </ul>
+                                    <div>
+                                        <img src="assets/certifications/Deep Learning Course 5 Certificate.jpg", class="center">
+                                    </div>
+                                </details>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div>
@@ -1618,21 +1669,25 @@
                         <center><h1 class="title">DeepLearning.AI Tensorflow Developer Professional Certificate</h1></center>
                     </div>
                     <div>
-                        <center><img src="assets/Tensorflow Developer Certificate.jpeg" width="300"></center>
+                        <img src="assets/Tensorflow Specialization Certificate.jpeg" width="300" class="center">
                     </div>
                     <div>
-                        <li>
-                            <ul>
+                        <ul>
+                            <li>
                                 <details>
                                     <summary>Course 1: Introduction to Tensorflow for Artificial Intelligence, Machine Learning, and Deep Learning</summary>
-                                    <!-- Module 1: A New Programming Paradigm
-                                    Module 2: Introduction to Computer Vision
-                                    Module 3: Enhancing Vision with Convolutional Neural Networks
-                                    Module 4: Using Real-World Images -->
-                                    <center><img src="assets/Tensorflow Course 1 Certificate.jpeg"></center>
+                                    <ul>
+                                        <li>Module 1: A New Programming Paradigm</li>
+                                        <li>Module 2: Introduction to Computer Vision</li>
+                                        <li>Module 3: Enhancing Vision with Convolutional Neural Networks</li>
+                                        <li>Module 4: Using Real-World Images</li>
+                                    </ul>
+                                    <div>
+                                        <img src="assets/certifications/Tensorflow Course 1 Certificate.jpeg" class='center'>
+                                    </div>
                                 </details>
-                            </ul>
-                            <ul>
+                            </li>
+                            <li>
                                 <details>
                                     <summary>Course 2: Convolutional Neural Networks in Tensorflow</summary>
                                     <ul>
@@ -1640,32 +1695,41 @@
                                         <li>Module 2: Augmentation: A Technique to Avoid Overfitting</li>
                                         <li>Module 3: Transfer Learning</li>
                                         <li>Module 4: Multiclass Classifications</li>
-                                        <center><img src="assets/Tensorflow Course 2 Certificate.jpeg"></center>
                                     </ul>
+                                    <div>
+                                        <img src="assets/certifications/Tensorflow Course 2 Certificate.jpeg" class="center">
+                                    </div>
                                 </details>
-                            </ul>
-                            <ul>
+                            </li>
+                            <li>
                                 <details>
                                     <summary>Course 3: Natural Language Processing in Tensorflow</summary>
-                                    <!-- Module 1: Sentiment in Text
-                                    Module 2: Word Embeddings
-                                    Module 3: Sequence Models
-                                    Module 4: Sequence Models and Literature -->
-                                    <center><img src="assets/Tensorflow Course 3 Certificate.jpeg"></center>
+                                    <ul>
+                                        <li>Module 1: Sentiment in Text</li>
+                                        <li>Module 2: Word Embeddings</li>
+                                        <li>Module 3: Sequence Models</li>
+                                        <li>Module 4: Sequence Models and Literature</li>                                        
+                                        <div>
+                                            <img src="assets/certifications/Tensorflow Course 3 Certificate.jpeg" class="center">
+                                        </div>
                                 </details>
-                            </ul>
-                            <ul>
+                            </li>
+                            <li>
                                 <details>
                                     <summary>Course 4: Sequences, Time Series and Prediction</summary>
-                                    <!-- Module 1: Sequences and Prediction
-                                    Module 2: Deep Neural Networks for Time Series
-                                    Module 3: Recurrent Neural Networks for Time Series
-                                    Module 4: Real-World Time Series Data -->
-                                    <center><img src="assets/Tensorflow Course 4 Certificate.jpeg"></center>
+                                    <ul>
+                                        <li>Module 1: Sequences and Prediction</li>
+                                        <li>Module 2: Deep Neural Networks for Time Series</li>
+                                        <li>Module 3: Recurrent Neural Networks for Time Series</li>
+                                        <li>Module 4: Real-World Time Series Data</li>
+                                    </ul>
+                                    <div>
+                                        <img src="assets/certifications/Tensorflow Course 4 Certificate.jpeg" class="center">
+                                    </div>
                                 </details>
-                            </ul>
+                            </li>
                             
-                        </li>
+                        </ul>
                     </div>
                 </div>
                

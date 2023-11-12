@@ -490,6 +490,12 @@
                 font-size: 2.2rem
             }
 
+            h2-white {
+                font-size: 2.2rem;
+                color:white;
+                font-weight: 600
+            }
+
             h3 {
                 font-size: 2rem
             }
@@ -1505,10 +1511,209 @@
             .spoiler:hover:before {
                 display: none
             }
+
+            .collapsible {
+                background-color: #3399CC;
+                color: white;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+            }
+
+            .active, .collapsible:hover {
+                background-color: #0169a4;
+            }
+
+            .collapsible:after {
+                content: '\002B';
+                color: white;
+                font-weight: bold;
+                float: right;
+                margin-left: 5px;
+            }
+
+            .active:after {
+                content: "\2212";
+            }
+
+            .content {
+                padding: 0 18px;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+                background-color: #b7b7b7;
+                color: #464646;
+            }
+
+            .collapsible-second {
+                background-color: #e87878;
+                color: white;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+            }
+
+            .active-second, .collapsible-second:hover {
+                background-color: #582630;
+            }
+
+            .collapsible-second:after {
+                content: '\002B';
+                color: white;
+                font-weight: bold;
+                float: right;
+                margin-left: 5px;
+            }
+
+            .active-second:after {
+                content: "\2212";
+            }
+
+            .content-second {
+                padding: 0 18px;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+                background-color: #f1e9db;
+                color: #464646;
+            }
+
+            .collapsible-third {
+                background-color: #d8d8f0;
+                color: grey;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+            }
+
+            .active-third, .collapsible-third:hover {
+                background-color: #6a5d7b;
+                color: white;
+            }
+
+            .collapsible-third:after {
+                content: '\002B';
+                color: white;
+                font-weight: bold;
+                float: right;
+                margin-left: 5px;
+            }
+
+            .active-third:after {
+                content: "\2212";
+            }
+
+            .content-third {
+                padding: 0 18px;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+                background-color: #f1e9db;
+                color: #464646;
+            }
+
+             .collapsible_fourth {
+                background-color: #b9d8c2;
+                color: white;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+            }
+
+            .active_fourth, .collapsible_fourth:hover {
+                background-color: #0b3c49;
+                color: white;
+            }
+
+            .collapsible_fourth:after {
+                content: '\002B';
+                color: gray;
+                font-weight: bold;
+                float: right;
+                margin-left: 5px;
+            }
+
+            .active_fourth:after {
+                content: "\2212";
+            }
+
+            .content_fourth {
+                padding: 0 18px;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+                background-color: #ffeedb;
+                color: #464646;
+            }
+            .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            grid-template-rows: repeat(3, 1fr); /* 3 rows */
+            gap: 10px; /* Adjust the gap as needed */
+            }
+
+            .grid-item {
+             /* Add borders or styles to your items */
+                padding: 10px;
+            }
+/*             
+            .grid-item:nth-child(1) {
+                background-color: #3399CC;
+            }
+
+            .grid-item:nth-child(2) {
+            background-color: #e87878;
+            }
+
+            .grid-item:nth-child(3) {
+            background-color: #d8d8f0;
+            }
+
+            .grid-item:nth-child(4) {
+                background-color: #0169a4;
+            }
+
+            .grid-item:nth-child(5) {
+                background-color: #ec4446;
+            }
+
+            .grid-item:nth-child(6) {
+                background-color: #6a5d7b;
+            }
+
+            .grid-container div:nth-child(4) {
+                color: white;
+            }
+
+            .grid-container div:nth-child(5) {
+                color: white;
+            }
+
+            .grid-container div:nth-child(6) {
+                color: white;
+            } */
+
+
     </style>
     <body>
         <div class="wrapper-large">
-            <div class="page blog">
+            < class="page blog">
                 <header class="header-home animated">
                     <a class="link" href="https://datascisteven.github.io/about">
                         <img class="selfie" alt="Steven Yan" src="assets/new_headshot.png"/>
@@ -1560,52 +1765,253 @@
                         </li>
                     </ul>
                 </nav>
-                
-                <div>
-                    <center>
-                    <h2>Google Doc Version:</h2>
-                    <iframe src="https://docs.google.com/document/d/1YwiWJF4qOzi-nNY9Dw6CkI65CqPjQ368GvIj5dSw62E/edit?usp=sharing" width="640" height="480" allow="autoplay"></iframe>
-                    </center>
+                <div name="about_section">
+
+  
+
                 </div>
-                <div>
+                
+                </br>
+                </br>
+                <div name="work_experiences_section">    
+                    <h2>RELEVANT EXPERIENCE:</h2>
+
+                    <button class="collapsible">Data Scientist at StartOut, Remote (1/2022 - 7/2023)</button>
+                    <div class="content">
+                        <ul>
+                            <li>Implemented Sparse Principal Component Analysis and Difference-in-Differences models to produce policy recommendations highest in magnitude and significance for each state and selected 120 metro areas</li>
+                            <li>Developed algorithms for gender and race guessing, resolving conflicting information on entrepreneurial data, and code for automating quarterly data update process</li>
+                            <li>Analyzed data to identify top insights on LGBTQ+ entrepreneurship for website posting and reporting to key stakeholders</li>
+                            <li>Collaborated with my manager and Dr. Vivienne Ming (Index creator) to co-author the State of LGBTQ+ Entrepreneurship Report</li>
+                            <li>Served as technical lead for small team of college interns used for researching data and performing data entry and cleaning tasks</li>
+                        </ul>
+                    </div>
+                </div>
+                </br>
+                </br>
+
+
+                <div name="volunteer_section">
+                    
+                    <h2>VOLUNTEER EXPERIENCES:</h2>
+
+                    <button class="collapsible-third">Omdena Hyderabad Local Chapter Challenge</button>
+                    <div class="content-third">
+                    </div>
+
+                    <button class="collapsible-third">Omdena Myanmar Local Chapter Challenge (7/2023 - 9/2023)</button>
+                    <div class="content-third">
+
+                        <h3>Role: Team Lead</h3>
+
+                        <p>The goal for the project is to democratize access to resources by developing a freely accessible webapp for identifying submitted chest X-ray images for the following respiratory lung disorders: tuberculosis, lung cancer, pneumonia, and COVID.</p>
+                        
+                        <p>Four teams worked alongside each other in building models for each disease for 8 weeks, and within each team, we selected the best model for deployment.</p>
+
+                        <p>I led the Tuberculosis team through the project tasks:  data collection, EDA and data preprocessing, model building and evaluation, and model deployment.</p>
+
+                        <p>Links:</p>
+                        <ul>
+                            <li>Official Project Repo: https://github.com/OmdenaAI/myanmar-chapter-chest-x-rays</p>
+                            <li>My Project Repo: https://tinyurl.com/Tuberculosis-Detector</li>
+                            <li>Streamlit App: https://chest-xrays-detection-system.streamlit.app/</li>
+                        </ul>
+
+                    </div>
+                
+
+                    <button class="collapsible-third">Omdena Giga AI Innovation Challenge (10/2021 - 1/2022)</button>
+                    <div class="content-third">
+
+                        <h3>Role: Lead Machine Learning Engineer</h3>
+
+                        <p>We collaborated in this OmdenaLore AI challenge with the Giga team, a joint initiative between UNICEF and ITU for two months. We built several Computer Vision and Deep Learning models to detect school locations in Sudan using Satellite Imagery. We did an extensive and thorough analysis of the data and built multiple models using datasets provided by the Giga team to solve this problem.</p>
+
+                    </div>
+
+                    <button class="collapsible-third">DataDive Hackathon (9/2021 - 10/2021)</button>
+                    <div class="content-third">
+
+                        <p>Attended DataDive hackathon event and participated in continued efforts in data wrangling and visualization for project sponsored by CDAC at UChicago to develop new tools to measure broadband access in US</p>
+                    </div>
+                </div>
+                </br>
+                </br>
+
+                <div name="other_experiences_section">
+                    
+                    <h2>OTHER EXPERIENCES:</h2>
+
+                    <button class="collapsible_fourth">Educational Consultant (Freelance), New York Metro (8/2009 - 10/2020)</button>
+                    <div class="content_fourth">
+                        <ul>
+                            <li>Developed detailed individualized study plan for premedical students based on academic history and initial in-person assessment to provide targeted content review, MCAT-style practice, and expert experience and insight into how each topic is likely to be tested on Test Day</li>
+                            <li>Provided insight into the mindset of top scorers and promoted study skills necessary for success on the exam</li>
+                            <li>Advised students through application process and provided essay writing and editing services</li>
+                            <li>Offered sliding scale services to any student qualifying for financial assistance from AAMC and passionate about working with underrepresented and underserved communities (including URM’s and students with LD’s) and equalizing access to resources</li>
+                        </ul>
+                    </div>
+                    
+                    <button class="collapsible_fourth">MCAT Content Specialist at Khan Academy, Remote (4/2013 - 2/2014)</button>
+                    <div class="content_fourth">
+                        <ul>
+                            <li>Worked on a team of 25 content writers selected through writing competition to develop open-source high-quality test prep materials in effort to equalize access to resources</li>
+                            <li>Developed Physical Science questions and passages and submitted for review by official AAMC Content Experts prior to publication on website</li>
+                            <li>Project led by Khan Academy and American Association of Medical Colleges (AAMC) and funded by Robert Wood Johnson Foundation</li>
+                        </ul>
+                    </div>
+
+                    <button class="collapsible_fourth">MCAT Bootcamp Manager at Mentoring in Medicine, Bronx, NY (4/2009 - 9/2011)</button>
+                    <div class="content_fourth">
+                        <ul>
+                            <li>Designed and delivered 20-session bootcamp to prepare URM students for the MCAT in the Mentoring In Medicine Program</li>
+                            <li>Created content lessons focusing on interaction and engagement, which included student pair, student group, and game activities, as well as individual exercises</li>
+                            <li>Collaborated with alumni in conducting review sessions and in working with difficult students</li>
+                            <li>Met with Executive Director weekly to discuss any curriculum changes or major student concerns</li>
+                        </ul>
+                    </div>
+
+                    <button class="collapsible_fourth">Prehealth Teacher Trainer and Curriculum Developer, New York, NY (10/2005 - 6/2008)</button>
+                    <div class="content_fourth">
+                        <ul>
+                            <li>Created specialized Verbal program for JAMP, program for premeds from minority backgrounds in Texas</li>
+                            <li>Developed materials for different initiatives, i.e. creating MCAT Tutoring Guide as handbook for newly trained tutors</li>
+                            <li>Managed team of 15-20 instructors in Manhattan/Bronx, including assigning classes, conducting class observations, and providing specific feedback; increased excellence ratings in area by 5%</li>
+                        </ul>
+                    </div>
+                </div>
+
+                </br>
+                </br>
+                <div name="education_section">
+                    
+                    <h2>EDUCATION:</h2>
+
+                    <button class="collapsible-second">Flatiron School</button>
+                    <div class="content-second">
+                        <ul>
+                            <li>Completed Data Science Online Immersive Bootcamp in June 2021</li>
+                            <!-- <li>Syllabus:</li>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul> -->
+                        </ul>
+                    </div>
+
+                    <button class="collapsible-second">University of Chicago</button>
+                    <div class="content-second">
+                        <ul>
+                            <li>Degree:  Bachelor of Arts in Biological Sciences</li>
+                            <li>Awards:  College Honor Scholarship (full academic scholarship), Dean's List (all quarters)</li>
+                            <li>Cumulative GPA: 3.7</li>
+                        </ul>
+                    </div>
+                </div>
+
+                </br>
+                </br>
+
+
+                <div name="skills_section">
+                    <h2>Skills:</h2>
+                        <ul>
+                            <li>Programming Skills: Python, SQL, HTML/CSS</li>
+                            <li>Machine Learning, Predictive Modeling: Scikit-learn, Tensorflow</li>
+                            <li>Data Cleaning or Mungling: Numpy, Pandas</li>
+                            <li>Statistics, Statistical Analysis: Excel, SciPy</li>
+                            <li>Data Mining and Interpretation</li>
+                            <li>Data Visualization: Matplotlib, Seaborn, Tableau</li>
+                            <li>Version Control: Git, Github</li>
+                            <li>Cloud Platform: Google Cloud Platform</li>
+                        </ul>
+                        </br>
+                        </br>
+                    <h2>Tech Stack:</h2>
+                        <center>
+                        <img src='assets/skills/jupyter96.png' width="60">
+                        <img src='assets/skills/vscode96.png' width="60">
+                        <img src='assets/skills/pandas96.png' width="60">
+                        <img src='assets/skills/numpy96.png' width="60">
+                        <img src='assets/skills/python96.png' width="60">
+                        <img src='assets/skills/github96.png' width="60">
+                        <img src='assets/skills/git96.png' width="60">
+                        <img src='assets/skills/slack96.png' width="60">
+                        <img src='assets/skills/word96.png' width="60">
+                        <img src='assets/skills/excel96.png' width="60">
+                        <img src='assets/skills/scikit-learn96.png' width="120">
+                        <img src='assets/skills/colab96.png' width="60">
+                        <img src='assets/skills/keras96.png' width="60">
+                        <img src='assets/skills/tensorflow96.png' width="60">
+                        <img src='assets/skills/tableau96.png' width="60">
+                        <img src='assets/skills/matplotlib96.png' width="60">
+                        <img src='assets/skills/seaborn96.png' width="60">
+                        <img src='assets/skills/mysql96.png' width="60">
+                        <img src='assets/skills/sql96.png' width="60">
+                        <img src='assets/skills/postgresql96.png' width="60">
+                        <img src='assets/skills/powerpoint96.png' width="60">
+                        <img src='assets/skills/html96.png' width="60">
+                        <img src='assets/skills/css96.png' width="60">
+                        <img src='assets/skills/scipy96.png' width="60">
+                        </center>
+                </div>
+                </br>
+                </br>
+                <div name="hobbies_section">
+                    <h2>Hobbies:</h2>
+                    <div class="grid-container">
+                        <div class="grid-item" background=#3399CC>
+                            <center>
+                                <img src="assets/hobbies/gardening.png" width="100"></br>
+                                <h4>Home Gardening</h4>
+                            </center>
+                        </div>
+                        <div class="grid-item">
+                            <center>
+                                <img src="assets/hobbies/gardening.png" width="100"></br>
+                                <h4>Piano Playing & Performance</h4>
+                            </center>
+                        </div>
+                        <div class="grid-item">
+                            <center>
+                                <img src="assets/hobbies/hiking.png" width="100"></br>
+                                <h4>Hiking</h4>
+                            </center>
+                        </div>
+                        <div class="grid-item">
+                            <center>
+                                <img src="assets/hobbies/language_learning.png" width="100"></br>
+                                <h4>Learning Languages</h4>
+                            </center>
+                        </div>
+                        <div class="grid-item">
+                            <center>
+                                <img src="assets/hobbies/social_impact.png" width="100"></br>
+                                <h4>Volunteerism & Social Impact</h4>
+                            </center>
+                        </div>
+                        <div class="grid-item">
+                            <center>
+                                <img src="assets/hobbies/travel.png" width="100"></br>
+                                <h4>Exploring World Cultures</h4>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                </br>
+                </br>
+                <!-- <div>
                     <center>
                     <h2>PDF Version:</h2>
                     <iframe src="assets/Steven_Yan_Data_Science_Resume.pdf#toolbar=0" width="100%" height="500px">
                     </iframe>
                     </center>
-                </div>
+                </div> -->
                 <div>
-                    <center>
-                        <h1 class="title">Technical Skills</h1>
-                    
-
-                    <img src='assets/skills/jupyter96.png'>
-                    <img src='assets/skills/vscode96.png'>
-                    <img src='assets/skills/pandas96.png'>
-                    <img src='assets/skills/numpy96.png'>
-                    <img src='assets/skills/python96.png'>
-                    <img src='assets/skills/github96.png'>
-                    <img src='assets/skills/git96.png'>
-                    <img src='assets/skills/slack96.png'>
-                    <img src='assets/skills/word96.png'>
-                    <img src='assets/skills/excel96.png'>
-                    <img src='assets/skills/scikit-learn96.png'>
-                    <img src='assets/skills/colab96.png'>
-                    <img src='assets/skills/keras96.png'>
-                    <img src='assets/skills/tensorflow96.png'>
-                    <img src='assets/skills/tableau96.png'>
-                    <img src='assets/skills/matplotlib96.png'>
-                    <img src='assets/skills/seaborn96.png'>
-                    <img src='assets/skills/mysql96.png'>
-                    <img src='assets/skills/sql96.png'>
-                    <img src='assets/skills/postgresql96.png'>
-                    <img src='assets/skills/powerpoint96.png'>
-                    <img src='assets/skills/html96.png'>
-                    <img src='assets/skills/css96.png'>
-                    <img src='assets/skills/scipy96.png'>
-
                     <em><p>Last Revised on 7/18/23</p></em>
-                    </center>
                 </div>
 
 
@@ -1620,5 +2026,22 @@
                 </footer>
             </div>
         </div>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                content.style.maxHeight = null;
+                } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+            }
+        </script>
+    
     </body>
 </html>
