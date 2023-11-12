@@ -1549,118 +1549,66 @@
                 color: #464646;
             }
 
-            .collapsible-second {
+            .education.collapsible {
                 background-color: #e87878;
                 color: white;
-                cursor: pointer;
-                padding: 18px;
-                width: 100%;
-                border: none;
-                text-align: left;
-                outline: none;
-                font-size: 15px;
             }
 
-            .active-second, .collapsible-second:hover {
+            .education.active, .education.collapsible:hover {
                 background-color: #582630;
             }
 
-            .collapsible-second:after {
-                content: '\002B';
+            .education.collapsible:after {
                 color: white;
-                font-weight: bold;
-                float: right;
-                margin-left: 5px;
             }
 
-            .active-second:after {
-                content: "\2212";
-            }
-
-            .content-second {
-                padding: 0 18px;
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height 0.2s ease-out;
+            .education.content {
                 background-color: #f1e9db;
                 color: #464646;
             }
 
-            .collapsible-third {
+            .other.collapsible {
                 background-color: #d8d8f0;
                 color: grey;
-                cursor: pointer;
-                padding: 18px;
-                width: 100%;
-                border: none;
-                text-align: left;
-                outline: none;
-                font-size: 15px;
             }
 
-            .active-third, .collapsible-third:hover {
+            .other.active, .other.collapsible:hover {
                 background-color: #6a5d7b;
                 color: white;
             }
 
-            .collapsible-third:after {
-                content: '\002B';
+            .other.collapsible:after {
                 color: white;
-                font-weight: bold;
-                float: right;
-                margin-left: 5px;
             }
 
-            .active-third:after {
-                content: "\2212";
-            }
-
-            .content-third {
-                padding: 0 18px;
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height 0.2s ease-out;
+            .other.content {
                 background-color: #f1e9db;
                 color: #464646;
             }
 
-             .collapsible_fourth {
+            .volunteer.collapsible {
                 background-color: #b9d8c2;
                 color: white;
-                cursor: pointer;
-                padding: 18px;
-                width: 100%;
-                border: none;
-                text-align: left;
-                outline: none;
-                font-size: 15px;
             }
 
-            .active_fourth, .collapsible_fourth:hover {
+            .volunteer.active, .volunteer.collapsible:hover {
                 background-color: #0b3c49;
                 color: white;
             }
 
-            .collapsible_fourth:after {
-                content: '\002B';
+            .volunteer.collapsible:after {
                 color: gray;
-                font-weight: bold;
-                float: right;
-                margin-left: 5px;
             }
 
-            .active_fourth:after {
+            .volunteer.active:after {
                 content: "\2212";
             }
 
-            .content_fourth {
-                padding: 0 18px;
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height 0.2s ease-out;
+            .volunteer.content {
                 background-color: #ffeedb;
                 color: #464646;
             }
+
             .grid-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr); /* 3 columns */
@@ -1765,7 +1713,7 @@
                         </li>
                     </ul>
                 </nav>
-                <div name="about_section">
+                <div class="objective">
 
   
 
@@ -1773,7 +1721,7 @@
                 
                 </br>
                 </br>
-                <div name="work_experiences_section">    
+                <div class="relevant">    
                     <h2>RELEVANT EXPERIENCE:</h2>
 
                     <button class="collapsible">Data Scientist at StartOut, Remote (1/2022 - 7/2023)</button>
@@ -1791,16 +1739,16 @@
                 </br>
 
 
-                <div name="volunteer_section">
+                <div class="volunteer">
                     
                     <h2>VOLUNTEER EXPERIENCES:</h2>
 
-                    <button class="collapsible-third">Omdena Hyderabad Local Chapter Challenge</button>
-                    <div class="content-third">
+                    <button class="collapsible">Omdena Hyderabad Local Chapter Challenge</button>
+                    <div class="content">
                     </div>
 
-                    <button class="collapsible-third">Omdena Myanmar Local Chapter Challenge (7/2023 - 9/2023)</button>
-                    <div class="content-third">
+                    <button class="collapsible">Omdena Myanmar Local Chapter Challenge (7/2023 - 9/2023)</button>
+                    <div class="content">
 
                         <h3>Role: Team Lead</h3>
 
@@ -1816,21 +1764,19 @@
                             <li>My Project Repo: https://tinyurl.com/Tuberculosis-Detector</li>
                             <li>Streamlit App: https://chest-xrays-detection-system.streamlit.app/</li>
                         </ul>
-
                     </div>
                 
 
-                    <button class="collapsible-third">Omdena Giga AI Innovation Challenge (10/2021 - 1/2022)</button>
-                    <div class="content-third">
-
+                    <button class="collapsible">Omdena Giga AI Innovation Challenge (10/2021 - 1/2022)</button>
+                    <div class="content">
                         <h3>Role: Lead Machine Learning Engineer</h3>
 
                         <p>We collaborated in this OmdenaLore AI challenge with the Giga team, a joint initiative between UNICEF and ITU for two months. We built several Computer Vision and Deep Learning models to detect school locations in Sudan using Satellite Imagery. We did an extensive and thorough analysis of the data and built multiple models using datasets provided by the Giga team to solve this problem.</p>
-
                     </div>
 
-                    <button class="collapsible-third">DataDive Hackathon (9/2021 - 10/2021)</button>
-                    <div class="content-third">
+                    <button class="collapsible">DataDive Hackathon (9/2021 - 10/2021)</button>
+                    <div class="content">
+                        <h3>Role: Data Research Analyst</h3>
 
                         <p>Attended DataDive hackathon event and participated in continued efforts in data wrangling and visualization for project sponsored by CDAC at UChicago to develop new tools to measure broadband access in US</p>
                     </div>
@@ -1838,12 +1784,12 @@
                 </br>
                 </br>
 
-                <div name="other_experiences_section">
+                <div class="other">
                     
                     <h2>OTHER EXPERIENCES:</h2>
 
-                    <button class="collapsible_fourth">Educational Consultant (Freelance), New York Metro (8/2009 - 10/2020)</button>
-                    <div class="content_fourth">
+                    <button class="collapsible">Educational Consultant (Freelance), New York Metro (8/2009 - 10/2020)</button>
+                    <div class="content">
                         <ul>
                             <li>Developed detailed individualized study plan for premedical students based on academic history and initial in-person assessment to provide targeted content review, MCAT-style practice, and expert experience and insight into how each topic is likely to be tested on Test Day</li>
                             <li>Provided insight into the mindset of top scorers and promoted study skills necessary for success on the exam</li>
@@ -1852,8 +1798,8 @@
                         </ul>
                     </div>
                     
-                    <button class="collapsible_fourth">MCAT Content Specialist at Khan Academy, Remote (4/2013 - 2/2014)</button>
-                    <div class="content_fourth">
+                    <button class="collapsible">MCAT Content Specialist at Khan Academy, Remote (4/2013 - 2/2014)</button>
+                    <div class="content">
                         <ul>
                             <li>Worked on a team of 25 content writers selected through writing competition to develop open-source high-quality test prep materials in effort to equalize access to resources</li>
                             <li>Developed Physical Science questions and passages and submitted for review by official AAMC Content Experts prior to publication on website</li>
@@ -1861,8 +1807,8 @@
                         </ul>
                     </div>
 
-                    <button class="collapsible_fourth">MCAT Bootcamp Manager at Mentoring in Medicine, Bronx, NY (4/2009 - 9/2011)</button>
-                    <div class="content_fourth">
+                    <button class="collapsible">MCAT Bootcamp Manager at Mentoring in Medicine, Bronx, NY (4/2009 - 9/2011)</button>
+                    <div class="content">
                         <ul>
                             <li>Designed and delivered 20-session bootcamp to prepare URM students for the MCAT in the Mentoring In Medicine Program</li>
                             <li>Created content lessons focusing on interaction and engagement, which included student pair, student group, and game activities, as well as individual exercises</li>
@@ -1871,8 +1817,8 @@
                         </ul>
                     </div>
 
-                    <button class="collapsible_fourth">Prehealth Teacher Trainer and Curriculum Developer, New York, NY (10/2005 - 6/2008)</button>
-                    <div class="content_fourth">
+                    <button class="collapsible">Prehealth Teacher Trainer and Curriculum Developer, New York, NY (10/2005 - 6/2008)</button>
+                    <div class="content">
                         <ul>
                             <li>Created specialized Verbal program for JAMP, program for premeds from minority backgrounds in Texas</li>
                             <li>Developed materials for different initiatives, i.e. creating MCAT Tutoring Guide as handbook for newly trained tutors</li>
@@ -1883,12 +1829,12 @@
 
                 </br>
                 </br>
-                <div name="education_section">
+                <div name="education">
                     
                     <h2>EDUCATION:</h2>
 
-                    <button class="collapsible-second">Flatiron School</button>
-                    <div class="content-second">
+                    <button class="collapsible">Flatiron School</button>
+                    <div class="content">
                         <ul>
                             <li>Completed Data Science Online Immersive Bootcamp in June 2021</li>
                             <!-- <li>Syllabus:</li>
@@ -1902,8 +1848,8 @@
                         </ul>
                     </div>
 
-                    <button class="collapsible-second">University of Chicago</button>
-                    <div class="content-second">
+                    <button class="collapsible">University of Chicago</button>
+                    <div class="content">
                         <ul>
                             <li>Degree:  Bachelor of Arts in Biological Sciences</li>
                             <li>Awards:  College Honor Scholarship (full academic scholarship), Dean's List (all quarters)</li>
@@ -1916,7 +1862,7 @@
                 </br>
 
 
-                <div name="skills_section">
+                <div class="skills">
                     <h2>Skills:</h2>
                         <ul>
                             <li>Programming Skills: Python, SQL, HTML/CSS</li>
@@ -1971,7 +1917,7 @@
                         </div>
                         <div class="grid-item">
                             <center>
-                                <img src="assets/hobbies/gardening.png" width="100"></br>
+                                <img src="assets/hobbies/piano_performance.png" width="100"></br>
                                 <h4>Piano Playing & Performance</h4>
                             </center>
                         </div>
